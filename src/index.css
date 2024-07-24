@@ -1,13 +1,23 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+/* .dashboardHeader{
+  height: 16vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.dashboardBody{
+  height: 84vh;
+}
+.salesCustomers{
+  height: 18vh;
+}
+.marketingSummary{
+  height: 64vh;
+}
+
+.piechartCard{
+  height: 30vh;
+} */
+
+.iphone-logo{
+  height: 40px;
+  width:40px;
 }

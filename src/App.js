@@ -1,25 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
+import Sidebar from './components/Sidebar/Sidebar';
+import './index.css';
+import './components/Sidebar/sidebar.css'
+import DashboardMain from './components/DashboardMain';
+import Orders from './components/Orders';
+import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom';
+import Layout from './components/Layout';
 
-function App() {
+const App = ()=>{
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <RouterProvider router={appRouter}/>
   );
 }
 
+const appRouter = createBrowserRouter([
+  {
+    path:"/",
+    element:<Layout/>,
+    children:[
+      {
+        path:"/",
+        element:<DashboardMain/>
+      },
+      {
+        path:"/Orders",
+        element:<Orders/>
+      }
+    ]
+}
+]);
+
 export default App;
+
+
