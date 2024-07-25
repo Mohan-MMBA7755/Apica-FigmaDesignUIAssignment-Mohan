@@ -25,9 +25,9 @@ const Sidebar = () => {
       ? 'bg-blue-500 text-white rounded-lg'
       : 'bg-white text-black'
   );
-  
+
   return (
-    <div className="sidebar p-3 h-screen">
+    <div className="sidebar p-3">
       <div className='flex ml-2 items-center'>
         <AiFillPieChart className='text-blue-300 h-7 w-7' />
         <h1 className='text-gray-700 ml-2 font-extrabold'>Metrix</h1>
